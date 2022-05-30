@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpiderChart Example</title>
+</head>
+<body>
+    <canvas id="chart"></canvas>
+    <script src="SpiderChart.js"></script>
+    <script>
+        let sc = new SpiderChart('chart',250,250)
+        let entity_one = {
+            "id": 'test1',
+            "data": {
+                "value": "some value"
+            }
+        }
+        sc.addEntity(entity_one);
+        sc.renderGraph(6);
+    </script>
+</body>
+</html>
