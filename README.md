@@ -2,9 +2,11 @@
 
 A minimalistic radar (spider) chart script displaying 5 values in a pentagon.
 
+Just SpiderChart.js is needed, other files are examples and docs.
+
 # Implement
 
-## shortest way without values
+## the shortest way without values
 ```html
 <canvas id="chart"></canvas>
 <script src="SpiderChart.js"></script>
