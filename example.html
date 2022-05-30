@@ -11,12 +11,36 @@
         let sc = new SpiderChart('chart',250,250)
         let entity_one = {
             "id": 'test1',
-            "data": {
-                "value": "some value"
-            }
+            "data": [
+                50,
+                40,
+                60,
+                50,
+                70
+            ],
+            "color": 'rgba(255, 178, 102, 0.3)'
         }
+        let entity_two = {
+            "id": 'test2',
+            "data": [
+                80,
+                90,
+                20,
+                70,
+                40
+            ],
+            "color": 'rgba(102, 255, 102, 0.3)'
+        }
+        sc.setOffset(1.05);
+        sc.setGrid('lightgray', 1, 0.5);
+        sc.setParams(['aa','bb','cc','dd','ee']);
         sc.addEntity(entity_one);
-        sc.renderGraph(6);
+        sc.addEntity(entity_two);
+        // sc.addEntity(entity_two);
+        // sc.addEntity(entity_two);
+        // sc.addEntity(entity_two);
+        sc.renderGraph();
+        sc.renderLegend();
     </script>
 </body>
 </html>
