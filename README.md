@@ -9,3 +9,6 @@
     sc.renderGraph(6);
 </script>
 ```
+result:
+
+![img.png](img.png)
